@@ -3,3 +3,24 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 23px;
+
+}
+
+.header__theme-menu-item button{
+  cursor: pointer;
+}
