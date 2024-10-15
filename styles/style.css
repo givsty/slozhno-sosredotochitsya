@@ -1,26 +1,101 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: "IBM Plex Mono", monospace;
+  background-image: url('../images/cover-image-dark.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
-  display: flex;
-  margin: 20px;
-  align-items: center;
-  justify-content: space-between;
+  padding-top: 20px;
+  display: grid;
+  background-image: url('../images/');
+  height: 100vh;
+  grid-gap: 30px;
 }
 
 .header__theme-menu {
+  justify-self: center;
+}
 
+.header__theme-menu-button {
+  border: none;
+  background: transparent;
+  color: #FF0070;
+  font-style: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid red;
+  transition: 2s;
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid black;
+}
+
+.header__lamp {
+  justify-self: end;
+  color: white;
+  position: absolute;
+}
+
+.header__lamp::before {
+  content: 'REC';
+  border-radius: 100%;
+  width: 9px;
+  height: 9px;
+  color: var(--);
+  box-shadow: inset;
+}
+
+.header__lamp::after {
+  content: '';
+  border-radius: 100%;
+  width: 9px;
+  height: 9px;
+  color: red;
+  box-shadow: inset;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid #FF0070;
 }
 
 .header__theme-menu-list {
+  gap: 32px;
   display: flex;
-  gap: 23px;
-
 }
 
-.header__theme-menu-item button{
+.header__theme-menu-item button {
   cursor: pointer;
+} 
+
+.header__title {
+  align-content: center;
+  justify-items: end;
+}
+
+.header__title-text {
+  color: #DB00FF;
+  font-size: 157px;
+  font-weight: 700;
+}
+
+.header__description {
+  justify-self: end;
+}
+
+.header__description-text {
+  width: 491px;
+  height: 71px;
+  font-size: 18px;
+  background-color: #FF0070;
+  font-weight: 700;
 }
