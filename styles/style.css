@@ -71,6 +71,7 @@
 .header__theme-menu-list {
   gap: 32px;
   display: flex;
+  justify-content: space-between;
 }
 
 .header__theme-menu-item button {
@@ -98,4 +99,20 @@
   font-size: 18px;
   background-color: #FF0070;
   font-weight: 700;
+}
+
+/* ВРЕМЕННАЯ ЗАТЫЧКА */
+.card__title {
+  background-color: red;
+}
+
+.card__description {
+  width: 648px;
+  height: 211px;
+  color: #F1B2CE;
+}
+
+.focus {
+  display: flex;
+  justify-content: space-between;
 }
