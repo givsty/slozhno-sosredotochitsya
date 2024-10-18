@@ -9,13 +9,23 @@
 }
 
 /*Header*/
+/* .decorated-zone::before {
+  content: '';
+}
+
+.decorated-zone::after {
+  content: '';
+} */
+
 .header {
   padding-top: 20px;
   display: grid;
   background-image: url('../images/');
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  grid-gap: 30px;
+  grid-template-rows: auto max-content;
+  /* align-items: center; */
+  /* grid-gap: 30px; */
 }
 
 .header__theme-menu {
@@ -87,8 +97,6 @@
 }
 
 .header__title {
-  align-content: center;
-  justify-items: end;
   text-shadow: 2px 2px red;
 }
 
@@ -96,22 +104,46 @@
   color: #DB00FF;
   font-size: 157px;
   font-weight: 700;
-  letter-spacing: 6px;
+  letter-spacing: 9px;
+  line-height: 82.5%;
 }
 
 .header__description {
   justify-self: end;
+  align-self: center;
   width: 491px;
+  max-height: 71px;
 }
 
 .header__description-text {
-  width: 491px;
-  height: 71px;
   font-size: 18px;
   background-color: #FF0070;
   font-weight: 700;
 }
 
+@media (width <= 768px) {
+  .header__theme-menu {
+    justify-self: end;
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  .header__theme-menu-list {
+    display: block;
+  }
+
+  .pictures__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+  }
+
+  .footer-title {
+    font-size: 0.5em;
+  }
+}
 /* section focus*/
 /* ВРЕМЕННАЯ ЗАТЫЧКА */
 .card__title {
@@ -190,15 +222,6 @@
     "tape books ice-cream"
     "tape street street";
   gap: 20px;
-}
-
-/* adaptive section picture */
-@media (width <=768px) {
-  .pictures__content {
-    display: flex;
-    flex-direction: column;
-    ;
-  }
 }
 
 .card__image {
