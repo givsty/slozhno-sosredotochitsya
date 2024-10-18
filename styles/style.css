@@ -24,6 +24,7 @@
 
 .header__theme-menu-button {
   border: none;
+  position: relative;
   background: transparent;
   color: #FF0070;
   font-style: inherit;
@@ -33,7 +34,8 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid red;
+  border: 1px solid transparent;
+  border-color: red;
   width: 70px;
 }
 
@@ -51,23 +53,22 @@
 
 .header__lamp::before {
   content: 'REC';
-  border-radius: 100%;
   width: 9px;
   height: 9px;
-  color: var(--);
-  box-shadow: inset;
   color: red;
   font-size: 18px;
   font-weight: 400;
 }
 
 .header__lamp::after {
-  content: '';
-  border-radius: 100%;
-  width: 9px;
-  height: 9px;
-  color: red;
-  box-shadow: inset;
+  content: ''; 
+  position: absolute;
+  top: 30%;
+  left: 40px;
+  width: 9px; 
+  height: 9px; 
+  background-color: red; 
+  border-radius: 50%; 
 }
 
 .header__theme-menu-button_active {
@@ -100,6 +101,7 @@
 
 .header__description {
   justify-self: end;
+  width: 491px;
 }
 
 .header__description-text {
