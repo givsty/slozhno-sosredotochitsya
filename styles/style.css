@@ -35,7 +35,6 @@
 .header__theme-menu-button:hover {
   border: 1px solid red;
   width: 70px;
-  gap: 0;
 }
 
 .header__theme-menu-button:focus {
@@ -73,6 +72,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid #FF0070;
+  width: 70px;
 }
 
 .header__theme-menu-list {
@@ -88,6 +88,7 @@
 .header__title {
   align-content: center;
   justify-items: end;
+  text-shadow: 2px 2px red;
 }
 
 .header__title-text {
@@ -150,6 +151,8 @@
 .adviсes__title{
   color: #FF0070;
 }
+
+/* section picture */
 .pictures {
   display: grid;
   gap: 20px;
@@ -170,6 +173,7 @@
   gap: 20px;
 }
 
+/* adaptive section picture */
 @media (width <= 768px) {
   .pictures__content {
     display: flex;
@@ -211,7 +215,10 @@
 }
 
 .footer-title  {
+  font-family: "IBM Plex Mono", monospace;
   font-size: 157px;
   color: #DB00FF;
-  font-weight: 800;
+  font-weight: 700;
+  text-shadow: 2px 2px red;
+  line-height: 82.5%;
 }
