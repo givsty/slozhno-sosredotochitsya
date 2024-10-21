@@ -4,5 +4,12 @@
 */
 
 :root {
-
+  --header-text-dark: #FF0070;
+  --header-title-dark: #db00ff;
+  --header-description-dark: #000028;
+  --header-background-description-dark: #FF0070;
+  --content-title-dark: #FF0070;
+  --content-card-title-dark: #000028;
+  --content-card-description-dark: #F1B2CE;
+  --main-background-image: url('../images/cover-image-dark.png');
 }

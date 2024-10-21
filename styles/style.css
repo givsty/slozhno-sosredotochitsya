@@ -2,6 +2,7 @@
 
 .page {
   font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
   background-image: url('../images/cover-image-dark.png');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -9,13 +10,26 @@
 }
 
 /*Header*/
-/* .decorated-zone::before {
+.decorated-zone::before {
   content: '';
+  position: absolute;
+  border-top: 1px solid var(--decorative-bracket-clr);
+  border-right: 1px solid var(--decorative-bracket-clr);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-end: 0;
+  inset-block-start: 0;
 }
 
 .decorated-zone::after {
   content: '';
-} */
+  position: absolute;
+  border-bottom: 1px solid var(--decorative-bracket-clr);
+  border-left: 1px solid var(--decorative-bracket-clr);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-block-end: 0;
+}
 
 .header {
   padding-top: 20px;
@@ -54,10 +68,14 @@
 }
 
 /* header decoration lamp */
-.header__lamp {
+.header__lamp { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-self: end;
   color: white;
   position: absolute;
+  margin-right: 72px;
 }
 
 
@@ -71,14 +89,15 @@
 }
 
 .header__lamp::after {
-  content: ''; 
+  content: '';
   position: absolute;
-  top: 30%;
+  top: 80%;
   left: 40px;
-  width: 9px; 
-  height: 9px; 
-  background-color: red; 
-  border-radius: 50%; 
+  width: 12px;
+  height: 12px;
+  box-shadow: 1px 1px 18px #FF0070;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .header__theme-menu-button_active {
@@ -97,22 +116,30 @@
 }
 
 .header__title {
-  text-shadow: 2px 2px red;
+
 }
 
 .header__title-text {
   color: #DB00FF;
   font-size: 157px;
+  /* font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
   font-weight: 700;
-  letter-spacing: 9px;
   line-height: 82.5%;
+  text-shadow: 4px 4px red;
 }
 
 .header__description {
   justify-self: end;
   align-self: center;
+  padding-right: 66px;  
+  font-size: 18px;
+  /* padding-right: 50px; */
+  /* max-inline-size: 364px; */
+
+  /* justify-self: end;
+  align-self: center;
   width: 491px;
-  max-height: 71px;
+  max-height: 71px; */
 }
 
 .header__description-text {
@@ -121,22 +148,46 @@
   font-weight: 700;
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .header__theme-menu {
+    margin: 10px 0 0;
     justify-self: end;
     align-self: flex-end;
     justify-content: flex-end;
+    min-height: 100vh;
   }
 
   .header__theme-menu-list {
     display: block;
   }
 
-  .pictures__content {
+  /* .header__title-text {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  } */
+
+  .focus {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
+  }
+
+  .concentration {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .concentration__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adviсes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pictures__content {
+    display: block;
+    flex-direction: column;
     gap: 10px;
   }
 
@@ -144,6 +195,7 @@
     font-size: 0.5em;
   }
 }
+
 /* section focus*/
 /* ВРЕМЕННАЯ ЗАТЫЧКА */
 .card__title {
@@ -204,8 +256,9 @@
 
 /* section picture */
 .pictures {
+  margin: 70px 0 20px 20px;
   display: grid;
-  gap: 20px;
+  grid-gap: 20px;
 }
 
 .pictures__title {
@@ -263,6 +316,6 @@
   font-size: 157px;
   color: #DB00FF;
   font-weight: 700;
-  text-shadow: 2px 2px red;
   line-height: 82.5%;
+  text-shadow: 4px 4px red;
 }
