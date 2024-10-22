@@ -3,11 +3,19 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-@media (prefers-color-scheme: light) {
+/* @media(prefers-color-scheme: light) {
   .page.theme_light {
-    --main-color: #353430E;
+    --main-color: #353430;
     --accent-color: #FFC2E6;
     --title-color: #353430;
     --background-image: url('../images/cover-image-light.png');
   }
+} */
+
+.page.theme_light {
+  --main-color: #353430;
+  --accent-color: #FFC2E6;
+  --background-color: #FFC2E6;
+  --text-color: #353430;
+  --background-image: url('../images/cover-image-light.png');
 }
