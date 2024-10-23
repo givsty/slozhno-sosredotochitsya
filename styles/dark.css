@@ -3,14 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/* @media(prefers-color-scheme: dark) {
-  .page.theme_dark {
-    --main-color: #FF0070;
-    --accent-color: #DB00FF;
-    --text-color: #F1B2CE;
-    --background-image: url('../images/cover-image-dark.png');
-  }  
-} */
 
 .page.theme_dark {
   --main-color: #FF0070;
@@ -18,4 +10,13 @@
   --background-color: #FF0070;
   --text-color: #F1B2CE;
   --background-image: url('../images/cover-image-dark.png');
-}  
+}
+
+@media(prefers-color-scheme: dark) {
+  .page.theme_dark {
+    --main-color: #FF0070;
+    --accent-color: #DB00FF;
+    --text-color: #F1B2CE;
+    --background-image: url('../images/cover-image-dark.png');
+  }  
+}

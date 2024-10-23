@@ -47,10 +47,14 @@
   font-size: 18px;
   font-weight: 400;
   text-transform: lowercase;
+
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid transparent;
+  border: 0.5px solid red;
   border-color: red;
   width: 70px;
 }
@@ -111,8 +115,7 @@
 }
 
 .header__title-text {
-  font-size: 157px;
-  /* font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px red;
@@ -140,13 +143,15 @@
 .card__title {
   background-color: var(--background-color);
   color: #353430;
+  margin-bottom: 10px;
 }
 
 /* section focus*/
 .focus {
+  gap: 10px;
   padding-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
 }
 
@@ -158,7 +163,7 @@
 /* section concentration */
 
 .concentration {
-  padding-top: 20px;
+  padding-top: 175px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -173,9 +178,9 @@
 /* section advices */
 
 .adviсes {
-  padding-top: 20px;
+  padding-top: 179px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .adviсes__list {
@@ -185,33 +190,15 @@
 
 /* section picture */
 
-.pictures__title {
-  color: var(#000028);
-}
-
 .pictures {
   display: grid;
   gap: 20px;
-  padding-top: 20px;
-}
-
-
-@media (max-width: 768px) {
-
-  .focus,
-  .concentration,
-  .concentration__list,
-  .adviсes,
-  .pictures {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
+  padding-top: 271px;
 }
 
 .pictures__title {
-  background-color: #FF0070;
+  color: #000028;
+  background-color: var(--background-color);
   width: 100%;
 }
 
@@ -223,7 +210,6 @@
     "tape books ice-cream"
     "tape street street";
   gap: 20px;
-
 }
 
 .card__image {
@@ -253,14 +239,14 @@
   grid-area: street;
 }
 
-.footer__wrapper {
+.footer__title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.footer-title {
+.footer__title-text {
   font-family: "IBM Plex Mono", monospace;
   font-size: 157px;
   color: #DB00FF;
@@ -269,12 +255,11 @@
   text-shadow: 4px 4px red;
 }
 
-@media (width <= 1024px) {
+/* adaptive */
+@media (width < 1024px) {
   .page {
-    margin: 20px;
-  }
-  .header__title-text {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .header__theme-menu {
@@ -292,8 +277,43 @@
   }
 }
 
+@media (max-width: 768px) {
+
+  .focus,
+  .concentration,
+  .concentration__list,
+  .adviсes,
+  .pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header__title-text {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .footer__title-text {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+}
+
 @media (max-width: 375px) {
-  
+  .page {
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+
+  .focus {
+    padding-top: 40px;
+  }
+
+  .concentration,
+  .adviсes,
+  .pictures {
+    padding-top: 50px;
+  }
 
   .pictures__content {
     display: flex;
