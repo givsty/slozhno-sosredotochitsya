@@ -6,7 +6,7 @@
   color: var(--main-color);
   background-image: var(--background-image);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -257,13 +257,12 @@
 
 /* adaptive */
 @media (width < 1024px) {
-  .page {
-    margin-left: 20px;
-    margin-right: 20px;
+  .main {
+    padding-right: 10px;
   }
 
   .header__theme-menu {
-    /* margin-top: 50px; */
+    margin-block: 43px;
     justify-self: end;
   }
 
@@ -278,7 +277,9 @@
 }
 
 @media (max-width: 768px) {
-
+  .header {
+    padding-top: 10px;
+  }
   .focus,
   .concentration,
   .concentration__list,
@@ -287,6 +288,12 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .header__theme-menu {
+    margin-block: 65px;
+  }
+  .header__lamp {
+    margin-right: 62px;
   }
 
   .header__title-text {
@@ -300,8 +307,11 @@
 }
 
 @media (max-width: 375px) {
+  .focus,
+  .concentration,
+  .adviсes,
+  .pictures
   .page {
-    margin-left: 10px;
     margin-left: 10px;
   }
 
