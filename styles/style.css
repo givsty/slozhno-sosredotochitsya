@@ -10,11 +10,18 @@
   background-attachment: fixed;
 }
 
-/*Header*/  
+/*Header*/
+.center {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+}
+
 .header {
+  position: relative;
   padding-top: 20px;
   display: grid;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   grid-template-rows: auto max-content;
 }
@@ -42,6 +49,7 @@
   left: 20px;
   background-color: transparent;
 }
+
 .header__theme-menu {
   justify-self: center;
 }
@@ -72,6 +80,7 @@
 
 /* header decoration lamp */
 .header__lamp {
+  top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,6 +255,10 @@
   grid-area: street;
 }
 
+.footer {
+  position: relative;
+}
+
 .footer__title {
   display: flex;
   justify-content: center;
@@ -269,7 +282,7 @@
   }
 
   .header__theme-menu {
-    margin-block: 60px; 
+    margin-block: 60px;
     justify-self: end;
   }
 
@@ -281,6 +294,7 @@
   .header__description {
     padding-top: 40px;
   }
+
   .footer-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
@@ -321,13 +335,23 @@
   .header {
     padding-top: 10px;
     margin-left: 10px;
-    min-height: 0;
+    gap: 10px;
+  }
+
+  .decorated-zone::after {
+    top: 10px;
+  }
+
+  .decorated-zone::before {
+    left: 0;
   }
 
   .header__title {
-    padding-bottom: 35px; 
+    padding-bottom: 35px;
   }
+
   .header__lamp {
+    top: 10px;
     margin-right: 72px;
   }
 
