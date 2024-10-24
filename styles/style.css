@@ -10,23 +10,7 @@
   background-attachment: fixed;
 }
 
-/*Header*/
-.decorated-zone::before {
-  /* content: '';
-  position: absolute;
-  border-right: 1px solid #FF0070;
-  border-top: 1px solid #FF0070;
-  width: 10px; */
-}
-
-.decorated-zone::after {
-  /* content: '';
-  position: absolute;
-  border-top: 1px solid #FF0070;
-  border-bottom: 1px solid #FF0070;
-  width: 10px; */
-}
-
+/*Header*/  
 .header {
   padding-top: 20px;
   display: grid;
@@ -35,6 +19,29 @@
   grid-template-rows: auto max-content;
 }
 
+.decorated-zone::after {
+  content: '';
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+  border-right: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid var(--main-color);
+  border-left: 1px solid var(--main-color);
+  inline-size: 25px;
+  block-size: 25px;
+  bottom: 20px;
+  left: 20px;
+  background-color: transparent;
+}
 .header__theme-menu {
   justify-self: center;
 }
@@ -262,7 +269,7 @@
   }
 
   .header__theme-menu {
-    margin-block: 43px;
+    margin-block: 60px; 
     justify-self: end;
   }
 
@@ -271,15 +278,20 @@
     flex-direction: column;
   }
 
+  .header__description {
+    padding-top: 40px;
+  }
   .footer-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding-top: 10px;
+
+  .header__theme-menu {
+    padding-right: 20px;
   }
+
   .focus,
   .concentration,
   .concentration__list,
@@ -289,9 +301,7 @@
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .header__theme-menu {
-    margin-block: 65px;
-  }
+
   .header__lamp {
     margin-right: 62px;
   }
@@ -307,16 +317,33 @@
 }
 
 @media (max-width: 375px) {
+
+  .header {
+    padding-top: 10px;
+    margin-left: 10px;
+    min-height: 0;
+  }
+
+  .header__title {
+    padding-bottom: 35px; 
+  }
+  .header__lamp {
+    margin-right: 72px;
+  }
+
+  .header__description {
+    padding-top: 20px;
+  }
+
   .focus,
   .concentration,
   .adviсes,
-  .pictures
-  .page {
+  .pictures .page {
     margin-left: 10px;
   }
 
   .focus {
-    padding-top: 40px;
+    padding-top: 105px;
   }
 
   .concentration,
