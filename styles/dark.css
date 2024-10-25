@@ -5,7 +5,8 @@
 */
 
 .page.theme_dark {
-  --lamp-toggle: absolute;
+  --lamp-toggle-before: 'REC';
+  --lamp-toggle-after: '';
   --main-color: #FF0070;
   --accent-color: #DB00FF;
   --background-color: #FF0070;
@@ -15,7 +16,8 @@
 
 @media(prefers-color-scheme: dark) {
   .page.theme_dark {
-    --lamp-toggle: absolute;
+    --lamp-toggle-before: 'REC';
+    --lamp-toggle-after: '';
     --main-color: #FF0070;
     --accent-color: #DB00FF;
     --text-color: #F1B2CE;

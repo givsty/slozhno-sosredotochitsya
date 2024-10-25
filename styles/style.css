@@ -91,7 +91,7 @@
 
 
 .header__lamp::before {
-  content: 'REC';
+  content: var(--lamp-toggle-before);
   width: 9px;
   height: 9px;
   color: red;
@@ -100,7 +100,7 @@
 }
 
 .header__lamp::after {
-  content: '';
+  content: var(--lamp-toggle-after);
   position: absolute;
   top: 80%;
   left: 40px;
@@ -160,6 +160,10 @@
   background-color: var(--background-color);
   color: #353430;
   margin-bottom: 10px;
+}
+
+.card__description {
+  font-size: 18px;
 }
 
 /* section focus*/
@@ -335,7 +339,7 @@
   .header {
     padding-top: 10px;
     margin-left: 10px;
-    gap: 10px;
+    height: auto;
   }
 
   .decorated-zone::after {
@@ -344,6 +348,7 @@
 
   .decorated-zone::before {
     left: 0;
+    left: 10px;
   }
 
   .header__title {
@@ -373,14 +378,24 @@
   .concentration,
   .adviсes,
   .pictures {
-    padding-top: 50px;
+    padding-top: 60px;
+  }
+
+  .pictures {
+    gap: 10px;
+    padding-top: 60px ;
+    padding-left: 10px;
   }
 
   .pictures__content {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    /* align-content: flex-start; */
     width: 100%;
+    gap: 10px;
   }
 
+  .footer__title {
+    height: 98vh;
+  }
 }

@@ -5,7 +5,8 @@
 */
 
 .page.theme_light {
-  --lamp-toggle: none;
+  --lamp-toggle-before: none;
+  --lamp-toggle-after: none;
   --main-color: #353430;
   --accent-color: #FFC2E6;
   --background-color: #FFC2E6;
@@ -15,7 +16,8 @@
 
 @media(prefers-color-scheme: light) {
   .page.theme_light {
-    --lamp-toggle: none;
+    --lamp-toggle-before: none;
+    --lamp-toggle-after: none;
     --main-color: #353430;
     --accent-color: #FFC2E6;
     --title-color: #353430;
