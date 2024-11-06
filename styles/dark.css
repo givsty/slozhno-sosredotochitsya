@@ -20,6 +20,7 @@
     --lamp-toggle-after: '';
     --main-color: #FF0070;
     --accent-color: #DB00FF;
+    --background-color: #FF0070;
     --text-color: #F1B2CE;
     --background-image: url('../images/cover-image-dark.png');
   }  
