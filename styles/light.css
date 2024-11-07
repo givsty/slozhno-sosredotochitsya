@@ -8,6 +8,7 @@
   --lamp-toggle-before: none;
   --lamp-toggle-after: none;
   --button-color-hover: rgb(53, 52, 48, 0.4);
+  --card-title: #353430;
   --link-border-color: #353430;
   --main-color: #353430;
   --link-color: #FFC2E6;
@@ -22,6 +23,7 @@
     --lamp-toggle-before: none;
     --lamp-toggle-after: none;
     --button-color-hover: rgb(53, 52, 48, 0.4);
+    --card-title: #353430;
     --link-border-color: #353430;
     --main-color: #353430;
     --link-color: #FFC2E6;

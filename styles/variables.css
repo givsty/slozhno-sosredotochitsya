@@ -5,12 +5,14 @@
 :root {
   --lamp-toggle-before: 'REC';
   --lamp-toggle-after: '';
-  --button-color-hover: #FF0070;
+  --button-color-hover: rgb(255, 0, 112, 0.4);
+  --card-title: #353430;
   --link-color: #FF0070;
+  --link-border-color: #F1B2CE;
   --main-color: #FF0070;
   --accent-color: #DB00FF;
-  --text-color: #F1B2CE;
   --background-color: #FF0070;
+  --text-color: #F1B2CE;
   --background-image: url('../images/cover-image-dark.png');
 }
 

@@ -166,6 +166,7 @@
 
 .card__title {
   background-color: var(--background-color);
+  color: var(--card-title);
   font-size: 18px;
 }
 
