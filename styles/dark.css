@@ -7,7 +7,7 @@
 .page.theme_dark {
   --lamp-toggle-before: 'REC';
   --lamp-toggle-after: '';
-  --button-color-hover: rgb(255,0,112, 0.4);  /*Исправить */
+  --button-color-hover: rgb(255, 0, 112, 0.4);
   --link-color: #FF0070;
   --link-border-color: #F1B2CE;
   --main-color: #FF0070;
@@ -21,7 +21,7 @@
   .page.theme_dark {
     --lamp-toggle-before: 'REC';
     --lamp-toggle-after: '';
-    --button-color-hover: rgb(255,0,112, 0.4);   /*Исправить */ 
+    --button-color-hover: rgb(255, 0, 112, 0.4);
     --link-color: #FF0070;
     --link-border-color: #F1B2CE;
     --main-color: #FF0070;
@@ -29,5 +29,5 @@
     --background-color: #FF0070;
     --text-color: #F1B2CE;
     --background-image: url('../images/cover-image-dark.png');
-  }  
+  }
 }

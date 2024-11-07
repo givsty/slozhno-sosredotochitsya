@@ -7,7 +7,7 @@
 .page.theme_light {
   --lamp-toggle-before: none;
   --lamp-toggle-after: none;
-  --button-color-hover: rgb(53,52,48, 0.4); 
+  --button-color-hover: rgb(53, 52, 48, 0.4);
   --link-border-color: #353430;
   --main-color: #353430;
   --link-color: #FFC2E6;
@@ -21,7 +21,7 @@
   .page.theme_light {
     --lamp-toggle-before: none;
     --lamp-toggle-after: none;
-    --button-color-hover: rgb(53,52,48, 0.4); 
+    --button-color-hover: rgb(53, 52, 48, 0.4);
     --link-border-color: #353430;
     --main-color: #353430;
     --link-color: #FFC2E6;
@@ -31,4 +31,3 @@
     --background-image: url('../images/cover-image-light.png');
   }
 }
-
