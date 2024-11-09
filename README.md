@@ -14,4 +14,4 @@
 
 ## Ссылка на проект
 
-https://github.com/givsty/posmotri_v_okno.git
+https://github.com/givsty/slozhno-sosredotochitsya.git
