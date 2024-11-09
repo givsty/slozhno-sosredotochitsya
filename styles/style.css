@@ -10,6 +10,11 @@
   background-attachment: fixed;
 }
 
+/* utils */
+.title-decor {
+  background-color: var(--background-color);
+}
+
 /*Header*/
 
 .header {
@@ -128,15 +133,12 @@
   cursor: pointer;
 }
 
-.header__title {
-  color: var(--accent-color);
-}
-
 .header__title-text {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px red;
+  color: var(--accent-color);
 }
 
 .header__description {
@@ -147,14 +149,25 @@
 .header__description-text {
   color: #353430;
   font-size: 18px;
-  background-color: #FF0070;
   font-weight: 700;
 }
 
 /* main content + card */
 .main {
+  display: grid;
+  gap: 52px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.title {
+  color: var(--title-decor);
+  font-size: 18px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
 }
 
 .card {
@@ -165,17 +178,30 @@
 }
 
 .card__title {
-  background-color: var(--background-color);
+  font-weight: 600;
   color: var(--card-title);
   font-size: 18px;
 }
 
+.card__list {
+  display: grid;
+  gap: 20px;
+}
+
 .card__description {
-  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
 }
 
 .card__link {
   text-decoration: none;
+  text-shadow: 2px 3px var(--link-color);
+}
+
+.card__link:hover {
+  border-bottom: 1px solid var(--main-color);
+  outline-offset: -4;
 }
 
 .card__link:focus {
@@ -187,73 +213,28 @@
   outline-offset: -2px;
 }
 
-.card__link-text {
-  text-shadow: 2px 3px var(--link-color);
-}
 
-.card__link-text:hover {
-  border-bottom: 1px solid var(--main-color);
-}
-
-
-/* focus */
-.focus {
-  display: grid;
-  gap: 20px;
-}
-
-.focus__title {
-  font-size: 18px;
-}
-
-.focus__list {
-  display: grid;
-  gap: 30px;
-}
-
-/* concentration */
-
-.concentration {
-  padding-top: 50px;
-  display: grid;
-  gap: 20px;
-}
-
-.concentration__title {
-  font-size: 18px;
-}
-
-.concentration__list {
-  display: grid;
-  gap: 30px;
-}
-
-/* adviсes */
-
-.adviсes {
-  padding-top: 50px;
-  display: grid;
-  gap: 20px;
-}
-
-.adviсes__list {
-  display: grid;
-  gap: 24px;
+.card__list .title {
+  color: var(--card-title);
 }
 
 /* section picture */
 
-.pictures {
+/* .pictures {
   padding-top: 57px;
+  display: grid;
+  gap: 10px;
+} */
+
+.section-pictures {
   display: grid;
   gap: 10px;
 }
 
-.pictures__title {
-  color: #000028;
-  background-color: var(--background-color);
-  width: 100%;
+.section-pictures .title {
+  color: var(--card-title);
 }
+
 
 .pictures__content {
   display: grid;
@@ -265,12 +246,6 @@
   gap: 20px;
 }
 
-.pictures__title {
-  color: #000028;
-  background-color: var(--background-color);
-  width: 100%;
-  font-size: 18px;
-}
 
 .pictures__content {
   display: grid;
@@ -280,10 +255,6 @@
     "tape books ice-cream"
     "tape street street";
   gap: 10px;
-}
-
-.card {
-  font-size: 18px;
 }
 
 .card__image {
@@ -330,6 +301,10 @@
 /* adaptive */
 
 @media (width >=1024px) {
+  .concentration .title {
+    inline-size: 260px;
+  }
+
   .concentration__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -343,17 +318,24 @@
     padding-left: 20px;
   }
 
-  .header__title {
+  .header__title-text {
     padding-top: 36px;
+  }
+
+  .main {
+    gap: 82px;
   }
 
   .focus {
     gap: 10px;
   }
 
-  .adviсes {
+  .advices {
     gap: 10px;
-    padding-top: 85px;
+  }
+
+  .footer {
+    margin-block: 60px;
   }
 
   .pictures {
@@ -369,17 +351,17 @@
   }
 
   .focus {
+    padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-top: 60px;
   }
 
-  .concentration {
-    padding-top: 80px;
+  .section-pictures {
+    display: grid;
+    gap: 20px;
   }
 
-  .adviсes {
-    padding-top: 80px;
+  .advices {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -426,13 +408,9 @@
 
   .header__theme-menu-list {
     flex-direction: column;
-    gap: 9px;
+    gap: 10px;
     display: flex;
     justify-content: space-between;
-  }
-
-  .concentration__title {
-    inline-size: 200px;
   }
 
   .header__theme-menu {
@@ -463,17 +441,18 @@
   }
 }
 
-@media (375px < width < 768px) {
-  .header__description {
-    padding-left: 10px;
+@media (375px < width <=768px) {
+  .main {
+    display: grid;
+    gap: 79px;
+  }
+
+  .concentration .title {
+    inline-size: 119px;
   }
 }
 
 @media (max-width: 375px) {
-
-  .main {
-    padding-bottom: 1px;
-  }
 
   .header {
     height: auto;
