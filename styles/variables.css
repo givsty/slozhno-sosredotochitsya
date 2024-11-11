@@ -5,6 +5,7 @@
 :root {
   --lamp-toggle-before: 'REC';
   --lamp-toggle-after: '';
+  --text-shadow-color: #ff0070;
   --card-title: #000028;
   --button-color-hover: rgb(255, 0, 112, 0.4);
   --link-color: #FF0070;
@@ -14,5 +15,6 @@
   --background-color: #FF0070;
   --text-color: #F1B2CE;
   --background-image: url('../images/cover-image-dark.png');
+  --main-background-color: #000028;
 }
 

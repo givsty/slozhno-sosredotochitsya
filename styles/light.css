@@ -7,6 +7,7 @@
 .page.theme_light {
   --lamp-toggle-before: none;
   --lamp-toggle-after: none;
+  --text-shadow-color: #ff0070;
   --button-color-hover: rgb(53, 52, 48, 0.4);
   --card-title: #353430;
   --link-border-color: #353430;
@@ -16,12 +17,14 @@
   --background-color: #FFC2E6;
   --text-color: #353430;
   --background-image: url('../images/cover-image-light.png');
+  --main-background-color: #fff1f7;
 }
 
 @media(prefers-color-scheme: light) {
   .page.theme_light {
     --lamp-toggle-before: none;
     --lamp-toggle-after: none;
+    --text-shadow-color: #ff0070;
     --button-color-hover: rgb(53, 52, 48, 0.4);
     --card-title: #353430;
     --link-border-color: #353430;
@@ -31,5 +34,6 @@
     --background-color: #FFC2E6;
     --title-color: #353430;
     --background-image: url('../images/cover-image-light.png');
+    --main-background-color: #fff1f7;
   }
 }
