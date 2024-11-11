@@ -5,6 +5,7 @@
 :root {
   --lamp-toggle-before: 'REC';
   --lamp-toggle-after: '';
+  --title-shadow: 1px 1px 18px #FF0070;
   --button-color-hover: rgb(255, 0, 112, 0.4);
   --card-title: #353430;
   --link-color: #FF0070;
