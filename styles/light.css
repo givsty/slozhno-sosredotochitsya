@@ -21,7 +21,7 @@
 }
 
 @media(prefers-color-scheme: light) {
-  .page.theme_light {
+  :root {
     --lamp-toggle-before: none;
     --lamp-toggle-after: none;
     --text-shadow-color: #ff0070;
