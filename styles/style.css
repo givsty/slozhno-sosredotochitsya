@@ -140,6 +140,7 @@
 .header__description {
   justify-items: end;
   align-self: center;
+  padding-left: 10px;
 }
 
 .header__description-text {
@@ -152,8 +153,7 @@
 .main {
   display: grid;
   gap: 52px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px 0 10px;
 }
 
 .title {
@@ -320,7 +320,7 @@
   .main {
     padding-left: 20px;
     padding-right: 20px;
-    gap: 80px;
+    gap: 81px;
   }
 
   .focus {
@@ -352,6 +352,7 @@
 
   .header__description {
     justify-self: end;
+    padding-left: 0px;
     padding-bottom: 13px;
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
   }
@@ -372,6 +373,7 @@
 }
 
 @media (max-width: 768px) {
+
   .header__theme-menu-list {
     flex-direction: column;
   }
@@ -388,9 +390,25 @@
   }
 }
 
+@media (375px < width < 768px) {
+  .header__theme-menu {
+    align-self: end;
+  }
+}
+
 @media (375px < width <=768px) {
   .concentration .title {
     inline-size: 119px;
+  }
+}
+
+@media (375px < width < 768px ) {
+  .decorated-zone::before {
+    bottom: 12px;
+  }
+  .decorated-zone::after {
+    top: 20px;
+    right: 20px;
   }
 }
 
@@ -411,9 +429,7 @@
   .header__description {
     font-size: 18px;
     margin-block: 52px;
-    padding-left: 10px;
-    padding-bottom: 55px;
-    padding-right: 1px;
+    padding: 0px 1px 55px 10px;
   }
 
   .header__lamp {
