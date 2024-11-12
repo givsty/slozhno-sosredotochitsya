@@ -403,6 +403,8 @@
   }
 
   .header__theme-menu {
+    justify-self: end;
+    align-self: center;
     margin-block: 65px;
   }
 
@@ -412,11 +414,6 @@
     padding-left: 10px;
     padding-bottom: 55px;
     padding-right: 1px;
-  }
-
-  .header__theme-menu {
-    justify-self: end;
-    align-self: center;
   }
 
   .header__lamp {
