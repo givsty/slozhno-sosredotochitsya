@@ -263,6 +263,8 @@
   grid-area: street;
 }
 
+ /* footer */
+
 .footer {
   display: flex;
   justify-content: center;
@@ -436,10 +438,6 @@
     padding-right: 22px;
     font-size: 18px;
     margin-block: 52px;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: column;
   }
 
   .header__theme-menu {
