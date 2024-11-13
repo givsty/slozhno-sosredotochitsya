@@ -287,7 +287,7 @@
 }
 
 .footer__title-text {
-  text-shadow: 2px 2px var(--text-shadow-color);
+  text-shadow: 2px 2px 0px var(--text-shadow-color);
   color: var(--accent-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-family: inherit;
