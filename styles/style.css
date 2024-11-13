@@ -269,7 +269,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   height: 100vh;
   position: relative;
 }
@@ -391,12 +390,12 @@
 }
 
 @media (375px < width < 768px) {
+  .header__lamp {
+    right: 62px;
+  }
+
   .decorated-zone::after {
     top: 20px;
-    right: 20px;
-  }
-  .header__theme-menu {
-    align-self: end;
   }
 }
 
