@@ -110,9 +110,9 @@
   content: var(--lamp-toggle-after);
   position: absolute;
   top: 80%;
-  left: 40px;
-  width: 12px;
-  height: 12px;
+  left: 42px;
+  width: 9px;
+  height: 9px;
   box-shadow: 0 0 2px 2px var(--main-color);
   background-color: var(--main-color);
   border-radius: 50%;
@@ -132,7 +132,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
-  text-shadow: 4px 4px var(--text-shadow-color);
+  text-shadow: 4px 4px 0px var(--text-shadow-color);
   color: var(--accent-color);
 }
 
@@ -209,9 +209,18 @@
   outline-offset: -2px;
 }
 
-
 .card__list .title {
   color: var(--card-title);
+}
+
+/* advices */
+.advices .advices__wrapper .title{
+  color: var(--card-title);
+}
+
+.advices__wrapper {
+  display: grid;
+  gap: 20px;
 }
 
 /* section picture */
