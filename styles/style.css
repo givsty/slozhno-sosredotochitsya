@@ -20,7 +20,6 @@
 
 .header {
   height: 100vh;
-  min-block-size: 768px;
   position: relative;
   padding-top: 20px;
   padding-right: 20px;
@@ -390,6 +389,12 @@
 }
 
 @media (375px < width < 768px) {
+  .header {
+    min-block-size: 768px;
+    padding-bottom: 55px;
+    padding-right: 10px;
+  }
+
   .header__lamp {
     right: 62px;
   }
