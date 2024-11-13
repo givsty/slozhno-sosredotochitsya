@@ -156,6 +156,7 @@
 }
 
 .title {
+  font-weight: 700;
   color: var(--title-decor);
   font-size: 18px;
 }
@@ -173,7 +174,7 @@
 }
 
 .card__title {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--card-title);
   font-size: 18px;
 }
@@ -214,8 +215,12 @@
 }
 
 /* advices */
-.advices .advices__wrapper .title{
+.advices .advices__wrapper .title {
   color: var(--card-title);
+}
+
+.advices .card__title {
+  font-weight: 400;
 }
 
 .advices__wrapper {
@@ -410,6 +415,10 @@
 
   .decorated-zone::after {
     top: 20px;
+  }
+
+  .footer {
+    min-block-size: 768px;
   }
 }
 
