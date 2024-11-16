@@ -201,7 +201,6 @@
 
 .card__link:hover {
   border-bottom: 1px solid var(--link-border-color);
-  outline-offset: -4;
 }
 
 .card__link:focus {
@@ -406,15 +405,19 @@
   .header {
     min-block-size: 768px;
   }
+
   .header__description {
     block-size: 29%;
   }
+
   .concentration .title {
     inline-size: 119px;
   }
+
   .concentration__list {
     gap: 22px;
   }
+
 }
 
 
